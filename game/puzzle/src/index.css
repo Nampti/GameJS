@@ -1,0 +1,43 @@
+:root {
+  --cellSize: 70px;
+  --width: 350px;
+  --height: 350px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+}
+
+.game {
+  margin: auto auto;
+  text-align: center;
+  line-height: 70px;
+  width: var(--width);
+  height: var(--height);
+}
+
+.cell {
+  width: 70px;
+  height: 70px;
+  margin-right: 7px;
+  border-radius: 4px;
+  margin-bottom: 7px;
+  background: #fff;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+}
+
+.cell.empty-cell {
+  opacity: 0;
+}
